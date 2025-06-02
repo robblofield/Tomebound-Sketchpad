@@ -1,12 +1,12 @@
 ```mermaid
 graph TD
-    A[Designer] --> B[Rara_GateRune\n(ScriptableObject)]
-    A --> C[RaRa_GateCombination\n(ScriptableObject)]
-    C --> D[GateController\n(State Machine)]
-    D --> E[RunePlate\n(Plate Logic)]
-    F[Player] --> G[RuneBlock\n(Rune Data)]
+    A[Designer] --> B[Rara_GateRune (SO)]
+    A --> C[RaRa_GateCombination (SO)]
+    C --> D[GateController (State Machine)]
+    D --> E[RunePlate (Plate Logic)]
+    F[Player] --> G[RuneBlock (Rune Data)]
     G --> E
-    E --> H[GateEventSystem\n(Event Bus)]
+    E --> H[GateEventSystem (Event Bus)]
     H --> D
-    D --> I[Gate\n(Door Logic)]
+    D --> I[Gate (Door Logic)]
 ```
